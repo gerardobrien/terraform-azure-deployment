@@ -49,9 +49,6 @@ resource "azurerm_network_security_group" "nsg-terraform" {
 }
 
 
-# find public ip address
-data "http"
-
 
 # Find my current Public IP
 data "http" "my_public_ip" {

@@ -13,8 +13,8 @@ resource "azurerm_virtual_network" "vnet-terraform" {
   location            = azurerm_resource_group.rg-terraform.location
   address_space       = ["10.10.90.0/24"]
 
-
 }
+
 
 #create subnet within vnet address space
 resource "azurerm_subnet" "subnet-terraform" {

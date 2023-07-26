@@ -5,7 +5,6 @@ Hey guys!! Thanks for watching the video, here's my code below! Dont just copy a
 Oh - if you have stumbled across this... you can view the video here https://www.youtube.com/@gerardobrien
 
 ***************************************
-          Follow me below!
 
  - https://www.gerardobrien.com
  - https://www.instagram.com/gerardobrien

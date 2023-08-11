@@ -5,7 +5,6 @@ resource "azurerm_resource_group" "tf-rg" {
 }
 
 
-
 # Create a virtual network within the resource group
 resource "azurerm_virtual_network" "tf-vnet" {
   name                = "tf-vnet"
@@ -15,7 +14,6 @@ resource "azurerm_virtual_network" "tf-vnet" {
 }
 
 
-
 # Create a subnet within the virtual network above
 resource "azurerm_subnet" "tf-snet" {
   name                 = "tf-snet"
@@ -23,7 +21,6 @@ resource "azurerm_subnet" "tf-snet" {
   virtual_network_name = azurerm_virtual_network.tf-vnet.name
   address_prefixes     = ["10.0.1.0/24"]
   }
-
 
 
 # Create a new public ip address
@@ -88,7 +85,6 @@ resource "azurerm_network_interface_security_group_association" "tf-nsg-nic" {
 
 
 
-
 # Create a new windows virtual machine
 resource "azurerm_windows_virtual_machine" "tf-vm" {
   name                = "tf-vm"
@@ -114,8 +110,9 @@ resource "azurerm_windows_virtual_machine" "tf-vm" {
   }
 }
 
+# output the public ip address of the vm
 
-# Output the public ip address for the vm
 output "azurerm_public_ip" {
     value = azurerm_public_ip.tf-pip.ip_address
 }
+
